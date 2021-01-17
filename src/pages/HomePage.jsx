@@ -2,6 +2,7 @@
 //  importing Component
 import Navbar from '../components/Navbar';
 import Riya from "../assets/riya.jpg";
+import avatar from "../assets/bg_blob.svg"
 
 const HomePage = () => {
     return (         
@@ -20,12 +21,24 @@ const HomePage = () => {
                 </div>
                 
                 <div className="profile-pic">
-                    <img src={Riya} alt=""/>
+                    <img src={Riya} alt="Riya Paul"/>
                 </div>
             </section>
 
-            <section className="sec2">
-                
+            <section className="sec2 flex achievements">
+                <h2>Area of Expertise</h2>
+                <div className="grid achieve">
+                    <div className="avatar">
+                        <img src={ avatar } alt=""/>
+                    </div>
+                    <div className="achievements-text">
+                        <p>Medical image computing, neuroimaging and analysis applied in finding subtypes inpsychiatric disorder</p>
+                        <p>Multivariate modelling, Machine Learning, Deep Learning and statistical learning for feature selection, pattern recognition, classification</p>
+                        <p>Transfer Learning Assisted Classification and Detection in psychiatric diseases.</p>
+                    </div>
+                </div>
+
+
             </section>
         </div>
     ); 

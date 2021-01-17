@@ -2,7 +2,7 @@
 
 body {  
   background-color: #F9EEEE;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Nunito;
   margin: 2em 0;
 }
 
@@ -74,15 +74,12 @@ code {
   border: 1px #fff solid;
 }
 
-
-/* .sec1{  background-color: #F9EEEE; }
-.sec2{  background-color: #ECE4E4; } */
-
 .sec1, .sec2 {    
   background-color: #F9EEEE;
-  border-bottom: 1px solid #434242;
+  /* border-bottom: 1px solid #434242; */
   width: 100%;
   overflow: hidden;
+  margin: 1em 0;
 }
 
 .sec2 {
@@ -91,12 +88,12 @@ code {
 
 /* Navbar Component */
 
-nav{
+nav{  
   display: flex;
+  font-family: Ubuntu;
   justify-content: space-between;
   margin: 0 auto;
   height: 4em;
-  font-family: Ubuntu;
   font-weight: 400;
 }
 
@@ -154,8 +151,7 @@ nav{
 }
 
 .main-intro{
-  font-size: 1.4em;
-  font-family: Nunito;
+  font-size: 1.4em;  
   /* margin-left: -1em; */
   color: #535353;
 }
@@ -168,3 +164,37 @@ nav{
   z-index: 1;
 }
 
+.achievements{
+  padding: 3em 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.achievements h2{
+  border-bottom: 1px solid #434242;
+}
+
+.achieve{
+  place-items: center;  
+}
+
+.avatar img{
+  width: 20em;
+  height: 20em;
+}
+
+.achievements-text p{
+  padding: 1em;
+  margin: 0.3em 1em;
+  position: relative;
+}
+
+.achievements-text p::before{
+  font-family: 'Font Awesome 5 Free';
+  content: '\f058';
+  position: absolute;
+  left: -1em;
+  top: 1.2em;
+  color: #666877;
+   
+}
