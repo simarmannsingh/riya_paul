@@ -3,6 +3,12 @@
 import Navbar from '../components/Navbar';
 import Riya from "../assets/riya.jpg";
 import avatar from "../assets/bg_blob.svg"
+import Accordian from '../components/Accordian';
+// import fraunhofer_mevis from "../assets/Fraunhofer_mevis.svg"
+// import Geomar from "../assets/Geomar.jpg"
+// import LMU from "../assets/LMU_Muenchen_Logo.png"
+// import MPI_BioCybernetics from "../assets/MPI_BioCybernetics.svg"
+
 
 const HomePage = () => {
     return (         
@@ -37,9 +43,16 @@ const HomePage = () => {
                         <p>Transfer Learning Assisted Classification and Detection in psychiatric diseases.</p>
                     </div>
                 </div>
+            </section>
 
+            <section className="sec1 flex past-exp">
+                <h2>Past Experience</h2>
+                <div className="flex outer_shell">
+                    <Accordian/>
+                </div>
 
             </section>
+
         </div>
     ); 
 }
