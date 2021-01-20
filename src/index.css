@@ -2,14 +2,17 @@
 
 body {  
   background-color: #F9EEEE;
-  font-family: Nunito;
-  margin: 2em 0;
+  font-family: Nunito;  
 }
 
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+h1, h2, h3, h4{
+  margin: 0.2em 0;
 }
 
 h2{
@@ -24,7 +27,7 @@ code {
 /* ----------- Utilities ---------------------------------*/
 
 .container{
-  max-width: 1100px;
+  max-width: 1050px;
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
@@ -89,7 +92,7 @@ code {
   /* border-bottom: 1px solid #434242; */
   width: 100%;
   overflow: hidden;
-  margin: 1em 0;
+  margin: 1em auto;
 }
 
 .sec2 {
@@ -105,6 +108,7 @@ nav{
   margin: 0 auto;
   height: 4em;
   font-weight: 400;
+  margin: 2em 0;
 }
 
 .Logo a{  
@@ -145,7 +149,11 @@ nav{
   grid-template-columns: 1fr 3fr 2fr;
 }
 
-.intro-social{  flex-direction: column; }
+.intro-social{  
+  flex-direction: column; 
+  animation: slideInFromLeft 0.5s ease-in;  
+}
+
 .intro-social a{
   font-size: 0.75em;
   margin: 0.2em;
@@ -162,11 +170,12 @@ nav{
 
 .main-intro{
   font-size: 1.4em;  
-  /* margin-left: -1em; */
+  animation: slideInFromLeft 0.5s ease-in;
   color: #535353;
 }
 
 .profile-pic img{
+  animation: slideInFromRight 0.5s ease-in;
   border-radius: 50%;
   width: 16em;
   height: 16em;
@@ -209,9 +218,12 @@ nav{
 /* ---------------- Past_experience ------------------------------------*/
 
 .past-exp{
-  flex-direction: column;
-  /* background-color: yellow; */
+  flex-direction: column;  
   padding: 1em;
+}
+
+.past-exp h3{
+  border-bottom: 1px solid #333;  
 }
 
 /* ---------------- Accordian  ------------------------------------------*/
@@ -219,22 +231,28 @@ nav{
 .outer_shell{  
   flex-direction: column;
   margin: 2em;
+  /* justify-content: flex-start; */
 }
 
 .accordian{
-  background-color: #E3F0F3;
+  background-color: #e4f0f1;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   grid-template-columns: 2fr 4fr 1fr;
-  place-items: center;
+  /* place-items: center;                 --> Centers anything inside a grid container*/        
   position: relative;
   width: 100%;
   margin: 0.3em;
 }
 
+
 .accordian p:nth-child(1){
   padding: 2.5em;
   display: flex;
   align-self: flex-start;
+}
+
+.accordian button{
+  border: none;
 }
 
 .accordian button::before,
@@ -254,6 +272,92 @@ nav{
   display: none;  
 }
 
-.accordion_contents{
-  /* display: none; */
+.accordion_contents{  
+  display: none;
+}
+
+.footer{
+  width: 100%;
+  padding: 5em;
+  background-color: #333;
+}
+
+.footer .container {
+  grid-template-columns: 4fr 2fr;
+  gap: 10em;
+}
+
+.footer-nav{
+  margin: 0;
+  width: 100%;
+  justify-content: space-around;
+  height: fit-content;
+}
+
+.footer-links li{
+  list-style: none;
+  margin: 6px 0;
+} 
+
+.footer-links li:hover{
+  text-decoration: underline;
+} 
+
+.footer-links a {
+  text-decoration: none;
+  color: #e4f0f1;
+}
+
+.social-links{
+  align-items: flex-start;
+}
+
+.social-links li{
+  font-size: 1.3em;
+  cursor: pointer;
+  list-style: none;
+  margin: 0.5em;
+  color: #eee3e3;
+}
+
+.social-links li:hover{
+  color: #c4bebe;
+}
+
+/* ---------------- Animations  ------------------------------------------*/
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
 }

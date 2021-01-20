@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Riya from "../assets/riya.jpg";
 import avatar from "../assets/bg_blob.svg"
 import Accordian from '../components/Accordian';
+import Footer from '../components/Footer'
 // import fraunhofer_mevis from "../assets/Fraunhofer_mevis.svg"
 // import Geomar from "../assets/Geomar.jpg"
 // import LMU from "../assets/LMU_Muenchen_Logo.png"
@@ -12,9 +13,9 @@ import Accordian from '../components/Accordian';
 
 const HomePage = () => {
     return (         
-        <div className="container">
+        <div >
             <Navbar />
-            <section className="grid intro sec1">
+            <section className="container grid intro sec1">
                 <div className="intro-social flex">
                     <a href="https://twitter.com/riyapual">Tw</a>
                     <a href="https://linkedin.com/riyapual">In</a>
@@ -31,7 +32,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className="sec2 flex achievements">
+            <section className="container sec2 flex achievements">
                 <h2>Area of Expertise</h2>
                 <div className="grid achieve">
                     <div className="avatar">
@@ -45,7 +46,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className="sec1 flex past-exp">
+            <section className="container sec1 flex past-exp">
                 <h2>Past Experience</h2>
                 <div className="flex outer_shell">
                     <Accordian/>
@@ -53,6 +54,7 @@ const HomePage = () => {
 
             </section>
 
+            <Footer/>           
         </div>
     ); 
 }
