@@ -18,10 +18,10 @@ const Footer = () => {
                     </ul>                    
                 </nav>
                 <ul className="social-links flex">
-                        <li><i class="fab fa-facebook-square fa-2x"></i></li>                    
-                        <li><i class="fab fa-twitter-square fa-2x"></i></li>                    
-                        <li><i class="fab fa-github-square fa-2x"></i></li>                    
-                        <li><i class="fab fa-instagram-square fa-2x"></i></li>                    
+                        <li><i className="fab fa-facebook-square fa-2x"></i></li>                    
+                        <li><i className="fab fa-twitter-square fa-2x"></i></li>                    
+                        <li><i className="fab fa-github-square fa-2x"></i></li>                    
+                        <li><i className="fab fa-instagram-square fa-2x"></i></li>                    
                 </ul>
             </div>
         </div>
