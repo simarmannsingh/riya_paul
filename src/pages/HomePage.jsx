@@ -5,11 +5,6 @@ import Riya from "../assets/riya.jpg";
 import avatar from "../assets/bg_blob.svg"
 import Accordian from '../components/Accordian';
 import Footer from '../components/Footer'
-// import fraunhofer_mevis from "../assets/Fraunhofer_mevis.svg"
-// import Geomar from "../assets/Geomar.jpg"
-// import LMU from "../assets/LMU_Muenchen_Logo.png"
-// import MPI_BioCybernetics from "../assets/MPI_BioCybernetics.svg"
-
 
 const HomePage = () => {
     return (         
@@ -17,9 +12,9 @@ const HomePage = () => {
             <Navbar />
             <section className="container grid intro sec1">
                 <div className="intro-social flex">
-                    <a href="https://twitter.com/riyapual">Tw</a>
-                    <a href="https://linkedin.com/riyapual">In</a>
-                    <a href="https://facebook.com/riyapual" className="social-active">Fb</a>
+                    <a href="https://twitter.com/RiyaPau02772852" target="blank">Tw</a>
+                    <a href="https://www.linkedin.com/in/riya-paul-9b490b58/" target="blank">In</a>
+                    <a href="https://www.facebook.com/riyapaul2011" target="blank" className="social-active">Fb</a>
                 </div>
 
                 <div className="main-intro">

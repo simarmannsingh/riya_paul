@@ -160,11 +160,11 @@ nav{
   text-decoration: none;
   color: #646464;
   padding: 0.5em;
-
 }
 
 .intro-social a:nth-last-child(1){
   border: 1px solid #646464;
+  padding: 0.5em 0.6em;
   border-radius: 50%;
 }
 
@@ -185,7 +185,7 @@ nav{
 
 /* ---------------- Achievements ---------------------------------------*/
 
-.achievements, .experience{
+.achievements{
   padding: 3em 0;
   flex-direction: column;
   justify-content: center;
@@ -231,7 +231,6 @@ nav{
 .outer_shell{  
   flex-direction: column;
   margin: 2em;
-  /* justify-content: flex-start; */
 }
 
 .accordian{
@@ -240,7 +239,7 @@ nav{
   grid-template-columns: 2fr 4fr 1fr;
   /* place-items: center;                 --> Centers anything inside a grid container*/        
   position: relative;
-  width: 100%;
+  width: 90%;
   margin: 0.3em;
 }
 
@@ -251,26 +250,28 @@ nav{
   align-self: flex-start;
 }
 
-.accordian button{
-  border: none;
-}
 
-.accordian button::before
+.accordian button
 {
-  content: url(./assets/down.svg);
+  background-image: url(./assets/down.svg);
   position: absolute;
+  border: none;
   width: 1.3em;
   height: 1.3em;
   color: #333;
-  top: 2.6em;
+  top: 4em;
+  right: 5em;
+  outline: none;  
   cursor: pointer;
-  display: inline;  
+  /* display: inline;   */
+}
+
+.accordion_rotated_btn{
+  background-image: url(./assets/up.svg) !important;
 }
 
 .accordion_contents{
-  height: fit-content;
-  /* max-height: 1000px;
-  overflow: hidden; */
+  height: fit-content;  
   transition: height 0.6s ease-in;
 }
 
@@ -332,18 +333,27 @@ nav{
   cursor: pointer;
   list-style: none;
   margin: 0.5em;
-  color: #eee3e3;
+}
+.social-links a{
+  color: #dad3d3;
+}
+.social-links a:hover{
+  color: #c4bebe;
 }
 
-.social-links li:hover{
-  color: #c4bebe;
+.separator{
+  background: #dad3d3;
+  border: none;
+  height: 1px;
+  margin-top: 3em;
+  margin-bottom: 0;
 }
 
 /* ---------------- Animations  ------------------------------------------*/
 
 @keyframes slideInFromLeft {
   0% {
-      transform: translateX(-100%);
+      transform: translateX(-100px);
   }
   100% {
       transform: translateX(0);
@@ -352,7 +362,7 @@ nav{
 
 @keyframes slideInFromRight {
   0% {
-      transform: translateX(100%);
+      transform: translateX(100px);
   }
   100% {
       transform: translateX(0);
@@ -361,7 +371,7 @@ nav{
 
 @keyframes slideInFromTop {
   0% {
-      transform: translateY(-100%);
+      transform: translateY(-100px);
   }
   100% {
       transform: translateY(0);
@@ -370,7 +380,7 @@ nav{
 
 @keyframes slideInFromBottom {
   0% {
-      transform: translateY(100%);
+      transform: translateY(100px);
   }
   100% {
       transform: translateY(0);

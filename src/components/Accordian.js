@@ -1,6 +1,5 @@
 import { useState} from 'react'
 
-
 const Accordian = () => {
 
     const [active, setActive] = useState(null);   
@@ -103,7 +102,8 @@ const Accordian = () => {
                             <p dangerouslySetInnerHTML={{__html: past.topic}} ></p>
                         </div>
                     </div>
-                    <button onClick={() => toggleAccordionCard(past.id) } type="button"></button>                    
+                    <button className={ active === past.id ? 'accordion_rotated_btn': ''} 
+                            onClick={() => toggleAccordionCard(past.id) } type="button"></button>                    
                 </div>
             ))}
 
