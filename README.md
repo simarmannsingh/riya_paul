@@ -1,5 +1,7 @@
 # Work Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/694b1491-fea9-4874-8da9-e12e25a2fe23/deploy-status)](https://app.netlify.com/sites/riyapaul/deploys)
+
 ![A preview of the Portfolio website](./preview1.png)
 
 ## Portfolio Website for Ms. Riya Paul
