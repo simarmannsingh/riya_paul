@@ -3,6 +3,7 @@
 body {  
   background-color: #F9EEEE;
   font-family: Nunito;
+  /* overflow: hidden; */
 }
 
 *{
@@ -99,49 +100,6 @@ code {
   background-color: #ECE4E4;  
 }
 
-/*------------- Navbar Component----------------------------------- */
-
-nav{  
-  display: flex;
-  font-family: Ubuntu;
-  justify-content: space-between;
-  margin: 0 auto;
-  height: 4em;
-  font-weight: 400;
-  margin: 2em 0;
-}
-
-.Logo a{  
-  font-size: 1.1em;
-  text-decoration: none;
-  font-weight: 400;
-  color: #434242;
-}
-
-.NavLinks {  
-  display: flex;
-  width: 40vw;
-  height: 1em;
-  font-size: 1em;
-  list-style: none;
-}
-
-.NavLinks li{
-  padding: 0.5em 2em;
-  margin: 0 auto;
-  height: 1em;
-}
-
-.NavLinks a {
-  text-decoration: none;
-  color: #7C7A7A;
-}
-
-.NavLinks a:hover, .pageactive{
-  padding: 1em 0;
-  border-bottom: 1px solid #7698F0;
-  color: #83a1ee;  
-}
 
 /* ---------------- Main Intro Section ---------------------------------*/
 

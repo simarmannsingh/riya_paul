@@ -1,6 +1,5 @@
 
 //  importing Component
-import Navbar from '../components/Navbar';
 import Riya from "../assets/riya.jpg";
 import avatar from "../assets/bg_blob.svg"
 import Accordian from '../components/Accordian';
@@ -9,8 +8,7 @@ import Twittertimeline from '../components/Twittertimeline';
 
 const HomePage = () => {
     return (         
-        <div >
-            <Navbar />
+        <div >            
             <section className="container grid intro sec1">
                 <div className="intro-social flex">
                     <a href="https://twitter.com/RiyaPau02772852" target="blank">Tw</a>

@@ -1,12 +1,23 @@
 import './App.css';
 import HomePage from './pages/HomePage';
-// import About from './pages/About';
+import Navbar from './components/Navbar/Navbar';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom'
 
 function App() 
 {
   return (
-    <HomePage/>
-    // <About/>
+    <Router>
+      <Navbar/>
+
+      <Switch>
+        <Route  exact path="/" component={HomePage} />
+      </Switch>
+
+    </Router>
   );
 }
 
