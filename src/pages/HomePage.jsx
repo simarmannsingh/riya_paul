@@ -3,12 +3,12 @@
 import Riya from "../assets/riya.jpg";
 import avatar from "../assets/bg_blob.svg"
 import Accordian from '../components/Accordian';
-import Footer from '../components/Footer'
-import Twittertimeline from '../components/Twittertimeline';
+import Footer from '../components/Footer/Footer'
+// import Twittertimeline from '../components/Twittertimeline';
 
 const HomePage = () => {
     return (         
-        <div >            
+        <div className="homepage">            
             <section className="container grid intro sec1">
                 <div className="intro-social flex">
                     <a href="https://twitter.com/RiyaPau02772852" target="blank">Tw</a>
@@ -49,7 +49,7 @@ const HomePage = () => {
             </section>
             <section className="container sec2 flex tweets">
                 <h2>Stay Up to date</h2>
-                <Twittertimeline/>
+                {/* <Twittertimeline/> */}
             </section>
             <Footer/>           
         </div>

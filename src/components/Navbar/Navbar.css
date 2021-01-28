@@ -41,6 +41,7 @@ nav, .navbar{
     text-decoration: none;
     font-weight: 400;
     color: #434242;
+    background: transparent;
 }
   
 .NavLinks {  
@@ -97,7 +98,8 @@ nav, .navbar{
   @media only screen and (min-width: 346px) {
     
     .navbar{
-        height: 12vh;        
+        height: 12vh;
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); */
     }
 
     .nav-container {
@@ -106,7 +108,7 @@ nav, .navbar{
         height: 12vh;
         max-width: unset;        
     }
-
+    
     .NavLinks{        
         display: flex;
         flex-direction: column;
@@ -125,7 +127,7 @@ nav, .navbar{
     }
       
     .active{
-        background: #F9EEEE;
+        background: #ECE4E4;
         right: 50%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -173,14 +175,14 @@ nav, .navbar{
   
   
   /*==============================================*/
-  /*-------   Min-Screeen-Size : 1200px    -------*/
+  /*-------   Min-Screeen-Size : 1024px    -------*/
   /*==============================================*/
   
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1024px) {
   
     .nav-container{
         height: 7vh;
-        max-width: 1100px;
+        max-width: 900px;
         margin: 0 auto;
     }
 
@@ -199,9 +201,23 @@ nav, .navbar{
         right: 0px;
     }
 
+    .active{
+        background: #F9EEEE;        
+    }
+
     .nav-icon{
         display: none;
     }
       
   }
   
+    /*==============================================*/
+  /*-------   Min-Screeen-Size : 1200px     -------*/
+  /*==============================================*/
+  
+  @media only screen and (min-width: 1200px) {
+  
+    .nav-container{
+        max-width: 1100px;
+    }
+}
