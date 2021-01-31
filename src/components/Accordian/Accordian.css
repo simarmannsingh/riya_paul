@@ -1,0 +1,231 @@
+.outer_shell{  
+    flex-direction: column;
+    margin: 2em;
+}
+  
+  .accordian{
+    background-color: #e4f0f1;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    grid-template-columns: 2fr 4fr 1fr;
+    /* place-items: center;                 --> Centers anything inside a grid container*/        
+    position: relative;
+    width: 90%;
+    margin: 0.3em;
+  }
+  
+  .accordian p:nth-child(1){
+    padding: 2.5em;
+    display: flex;
+    align-self: flex-start;
+  }
+  
+.accordian button
+{
+    background-image: url(../../assets/down.svg);
+    position: absolute;
+    border: none;
+    width: 1.3em;
+    height: 1.3em;
+    color: #333;
+    top: 4em;
+    right: 5em;
+    outline: none;  
+    cursor: pointer;
+    /* display: inline;   */
+}
+  
+  /* .accordion_rotated_btn{
+    background-image: url(../../assets/up.svg) !important;
+  } */
+  
+.accordion_contents{
+    height: fit-content;  
+    transition: height 0.6s ease-in;
+}
+  
+.accordion_nocontents{
+    display: none;
+    transition: height 0.6s ease-in;
+}
+  
+.accordion_contents h5{
+    margin: 0.5em 0;
+    color: #524d4d;
+    background-color: #e0dddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+  
+.accordion_contents p{
+    color: #222020;
+}
+
+.past_period{
+    display: flex;
+}
+
+.period_delimiter::after{
+    content: " - ";
+    padding: 0 5px;
+}
+
+/*==============================================*/
+/*---------------- Media Queries ---------------*/
+/*==============================================*/
+
+/*==============================================*/
+/*-------   Max-Screeen-Size : 345px     -------*/
+/*==============================================*/
+
+@media only screen and (max-width: 345px) {
+
+    .accordian{
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 0px;
+        font-size: 0.9em;
+    }
+    
+    .period_delimiter::after{
+        content: "|";
+    }
+    
+    .past_period{        
+       flex-direction: column;
+       text-align: center;
+    }
+
+    .accordian button
+    {      
+      right: 1.2em;
+    }
+
+    .accordian p:nth-child(1){
+        padding: 2.5em 1.5em;
+    }
+
+    .block{
+        padding: 1em 0;
+        margin: 1em 0;
+    }
+  
+}
+
+/*==============================================*/
+/*-------   Min-Screeen-Size : 346px     -------*/
+/*==============================================*/
+
+@media only screen and (min-width: 346px) {
+ 
+    .accordian{
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 0px;
+        font-size: 0.9em;
+    }
+    
+    .period_delimiter::after{
+        content: "|";
+    }
+    
+    .past_period{        
+       flex-direction: column;
+       text-align: center;
+    }
+
+    .accordian button
+    {      
+      right: 1.2em;
+    }
+
+    .accordian p:nth-child(1){
+        padding: 2.5em 1.5em;
+    }
+
+    .block{
+        padding: 1em 0;
+        margin: 1em 0;
+    }
+}
+
+
+
+
+/*==============================================*/
+/*-------   Min-Screeen-Size : 400px     -------*/
+/*==============================================*/
+
+@media only screen and (min-width: 400px) {
+
+    .accordian{
+        grid-template-columns: 2fr 3fr 1fr;       
+    }
+}
+
+
+
+/*==============================================*/
+/*-------   Min-Screeen-Size : 600px     -------*/
+/*==============================================*/
+
+@media only screen and (min-width: 600px) {
+
+}
+
+
+
+
+/*==============================================*/
+/*-------   Min-Screeen-Size : 768px     -------*/
+/*==============================================*/
+
+@media only screen and (min-width: 768px) {
+
+    .past_period{
+        flex-direction: row;
+      }
+    
+    .period_delimiter::after{
+        content: " - ";
+        padding: 0 5px;
+    }
+
+    .accordian{
+        grid-template-columns: 3fr 4fr 1fr;
+        font-size: 1em;
+        gap: 1em;
+    }
+
+    .accordian button
+    {
+        right: 3em;    
+    }
+
+}
+
+
+/*==============================================*/
+/*-------   Min-Screeen-Size : 1024px     -------*/
+/*==============================================*/
+
+@media only screen and (min-width: 1024px) {
+    .accordian p:nth-child(1){
+        padding: 2.5em;
+    }
+
+    .accordian{
+        grid-template-columns: 2fr 4fr 1fr;
+        gap: 1.5em;
+    }
+
+    
+}
+
+
+
+/*==============================================*/
+/*-------   Min-Screeen-Size : 1200px    -------*/
+/*==============================================*/
+
+@media only screen and (min-width: 1200px) {
+    
+    
+}

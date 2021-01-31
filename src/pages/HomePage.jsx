@@ -2,7 +2,7 @@
 //  importing Component
 import Riya from "../assets/riya.jpg";
 import avatar from "../assets/bg_blob.svg"
-import Accordian from '../components/Accordian';
+import Accordian from '../components/Accordian/Accordian';
 import Footer from '../components/Footer/Footer'
 // import Twittertimeline from '../components/Twittertimeline';
 

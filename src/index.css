@@ -186,68 +186,6 @@ code {
 
 /* ---------------- Accordian  ------------------------------------------*/
 
-.outer_shell{  
-  flex-direction: column;
-  margin: 2em;
-}
-
-.accordian{
-  background-color: #e4f0f1;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  grid-template-columns: 2fr 4fr 1fr;
-  /* place-items: center;                 --> Centers anything inside a grid container*/        
-  position: relative;
-  width: 90%;
-  margin: 0.3em;
-}
-
-.accordian p:nth-child(1){
-  padding: 2.5em;
-  display: flex;
-  align-self: flex-start;
-}
-
-.accordian button
-{
-  background-image: url(./assets/down.svg);
-  position: absolute;
-  border: none;
-  width: 1.3em;
-  height: 1.3em;
-  color: #333;
-  top: 4em;
-  right: 5em;
-  outline: none;  
-  cursor: pointer;
-  /* display: inline;   */
-}
-
-.accordion_rotated_btn{
-  background-image: url(./assets/up.svg) !important;
-}
-
-.accordion_contents{
-  height: fit-content;  
-  transition: height 0.6s ease-in;
-}
-
-.accordion_nocontents{
-  display: none;
-  transition: height 0.6s ease-in;
-}
-
-.accordion_contents h5{
-  margin: 0.5em 0;
-  color: #524d4d;
-  background-color: #e0dddd;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.accordion_contents p{
-  color: #222020;
-}
-
 .tweets{
   flex-direction: column;
   padding: 1em;
@@ -307,6 +245,70 @@ code {
 
 @media only screen and (max-width: 345px) {
 
+  .homepage{
+    margin-top: 12vh;
+    padding-top: 2vh;
+  }
+  
+  .intro{
+    max-width: unset;
+    width: 100%;
+    margin: 2em auto;
+    gap: 3em 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "main-intro  main-intro  main-intro"
+    "intro-social  profile-pic .";
+    
+  }
+  
+  .intro-social{  
+    grid-area: intro-social;
+  }
+  
+  .main-intro{
+    grid-area: main-intro;    
+    text-align: center;
+  }
+  
+  .main-intro h1{
+    border-bottom: 1px solid #535353;
+    width: fit-content;
+    margin: 2px auto;
+  }
+
+  .main-intro h6{
+    margin-top: 10px;
+  }
+  
+  .profile-pic{
+    grid-area: profile-pic;
+    margin: 0 auto;
+  }
+  .profile-pic img{
+    border: 10px solid #dddddd ;
+    width: 10em;
+    height: 10em;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .achievements{
+    width: 85%;
+    padding: 1em;
+  } 
+  
+  .achievements-text{
+    padding-left: 2em;
+  }
+
+  .achieve{
+    grid-template-columns: 1fr;
+  }
+
+  .avatar img{    
+    display: none;
+  }
   
 }
 

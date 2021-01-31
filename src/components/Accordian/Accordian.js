@@ -1,4 +1,5 @@
 import { useState} from 'react'
+import '../Accordian/Accordian.css'
 
 const Accordian = () => {
 
@@ -93,7 +94,7 @@ const Accordian = () => {
             {pastexp.map( (past) => (
                 
                 <div key={ past.id } className="grid accordian">            
-                    <p> {past.periodStarts} - {past.periodEnds} </p>
+                    <p className="past_period"> {past.periodStarts} <span className="period_delimiter"></span> {past.periodEnds} </p>
                     <div className="block">
                         <h3>{ past.post}</h3>
                         <h4>{past.institute}</h4>
