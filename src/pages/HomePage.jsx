@@ -4,7 +4,7 @@ import Riya from "../assets/riya.jpg";
 import avatar from "../assets/bg_blob.svg"
 import Accordian from '../components/Accordian/Accordian';
 import Footer from '../components/Footer/Footer'
-// import Twittertimeline from '../components/Twittertimeline';
+import Twittertimeline from '../components/Twittertimeline';
 
 const HomePage = () => {
     return (         
@@ -49,7 +49,7 @@ const HomePage = () => {
             </section>
             <section className="container sec2 flex tweets">
                 <h2>Stay Up to date</h2>
-                {/* <Twittertimeline/> */}
+                <Twittertimeline/>
             </section>
             <Footer/>           
         </div>
