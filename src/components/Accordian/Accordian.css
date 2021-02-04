@@ -5,7 +5,6 @@
   
   .accordian{
     background-color: #e4f0f1;
-    /* background-color: #E7E2E2; */
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     grid-template-columns: 2fr 4fr 1fr;
     /* place-items: center;                 --> Centers anything inside a grid container*/        
