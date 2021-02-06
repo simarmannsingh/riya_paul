@@ -195,6 +195,10 @@ code {
   margin: 1em 0;
 }
 
+.Photos-main{ 
+  height: 77vh;
+}
+
 /* ---------------- Animations  ------------------------------------------*/
 
 @keyframes slideInFromLeft {

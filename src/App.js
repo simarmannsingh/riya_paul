@@ -6,6 +6,9 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
+import Footer from './components/Footer/Footer';
+import Photos from './pages/Photos';
+import About from './pages/About';
 
 function App() 
 {
@@ -15,8 +18,11 @@ function App()
 
       <Switch>
         <Route  exact path="/" component={HomePage} />
+        <Route  path="/photos" component={Photos} />
+        <Route  path="/about" component={About} />
       </Switch>
 
+      <Footer/>
     </Router>
   );
 }
