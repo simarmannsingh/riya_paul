@@ -9,6 +9,7 @@ import {
 import Footer from './components/Footer/Footer';
 import Photos from './pages/Photos';
 import About from './pages/About';
+import Publications from './pages/Publications';
 
 function App() 
 {
@@ -20,6 +21,7 @@ function App()
         <Route  exact path="/" component={HomePage} />
         <Route  path="/photos" component={Photos} />
         <Route  path="/about" component={About} />
+        <Route  path="/publications" component={Publications} />
       </Switch>
 
       <Footer/>

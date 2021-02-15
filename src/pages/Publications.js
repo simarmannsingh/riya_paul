@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About = () => {
+const Publications = () => {
     return (
         <div className="container sec1 flex">
             <div className="main">
@@ -9,4 +9,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Publications;

@@ -4,7 +4,7 @@ import UploadForm from '../components/UploadForm/UploadForm'
 const Photos = () => {
     return (
         <div className="container sec1 flex">
-            <div className="Photos-main">
+            <div className="main">
                 <UploadForm/>
             </div>
         </div>
